@@ -1,0 +1,154 @@
+//media-query
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+        @media only screen and (min-width: 576px) { @content };    
+    }
+    @if $breakpoint == md {
+        @media only screen and (min-width: 768px) { @content };     
+    }
+    @if $breakpoint == lg {
+        @media only screen and (min-width: 992px) { @content };    
+    }
+    @if $breakpoint == xl {
+        @media only screen and (min-width: 1200px) { @content };    
+    }
+    @if $breakpoint == xxl {
+        @media only screen and (min-width: 1366px) { @content };    
+    }
+    @if $breakpoint == xxxl {
+        @media only screen and (min-width: 1920px) { @content };    
+    }
+    @if $breakpoint == xxxxl {
+        @media only screen and (min-width: 2560px) { @content };    
+    }
+}
+
+@mixin respond_max($breakpoint-max) {
+    @if $breakpoint-max == sm_max {
+        @media only screen and (max-width: 575.98px) { @content };    
+    }
+    @if $breakpoint-max == md_max {
+        @media only screen and  (max-width: 767.98px) { @content };    
+    }
+    @if $breakpoint-max == lg_max {
+        @media only screen and (max-width: 991.98px) { @content };    
+    }
+    @if $breakpoint-max == xl_max {
+        @media only screen and (max-width: 1999.98px) { @content };    
+    }
+}
+
+
+//padding & margin
+
+@mixin  pm-0 {
+    padding: 0;
+    margin: 0 auto;
+}
+
+@mixin  p-xy($x,$y) {
+    padding: $x $y;
+}
+
+//fonts
+
+@mixin font-h {
+    font-family: $main_font;
+    @include pm-0;
+    @include fw-700;
+    color: $color_main;
+}
+
+@mixin font-b {
+    font-family: $main_font;
+    @include pm-0;
+    @include fw-400;
+    color: $font_dark;
+    font-size: $p;
+}
+
+@mixin  fontawe {
+    font-family: FontAwesome;
+}
+
+
+//position
+
+@mixin posabt($top) {
+    position: absolute;
+    top: $top;
+}
+
+@mixin posabb($bottom) {
+    position: absolute;
+    bottom: $bottom;
+}
+
+@mixin posfixed($top) {
+    position: fixed;
+    top:$top ;
+    overflow: hidden;
+}
+
+@mixin posabtl($top,$left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin posabtr($top,$right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+
+@mixin posabbl($bottom,$left) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin posabbr($bottom,$right) {
+    position: absolute !important;
+    bottom: $bottom;
+    right: $right;
+}
+
+//background
+
+@mixin bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+//width
+
+@mixin wh($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin maxwh($w,$h) {
+    max-width: $w;
+    max-height: $h;
+}
+
+@mixin minwh($w,$h) {
+    min-width: $w;
+    min-height: $h;
+}
+
+@mixin  dflexc {
+    display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+}
+
+@mixin  dfajc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
