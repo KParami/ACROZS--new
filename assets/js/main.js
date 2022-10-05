@@ -21,9 +21,9 @@ $(function() {
 });
 
 $(function(){
-  $('.most-popular-course').owlCarousel({
+  $('.popular-course').popularCourse({
     loop:true,
-    margin:0,
+    margin:2,
     nav:true,
     responsive:{
         0:{

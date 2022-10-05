@@ -76,22 +76,32 @@
 
         .section-first-footer h1{
             color: #e5e5e5;
-            font-size: 35px;
+            font-size: 3rem;
             font-weight: bold;
-            margin-top: 10%;
             text-align: center;
-
-            
+            position: relative;
         }
 
 
         .section-first-footer h3{
             color: #e5e5e5;
-            font-size: 20px;
+            font-size: 2rem;
             text-align: center;
+            position: relative;
+        }
+        
+
+        .icon-person img{
+            height: 4.5rem;  
         }
 
+        .icon-person{
 
+                border-right: 2px solid #FFB600;
+                height: 100px;
+                position: relative;
+                
+        }
 
         .btn h3{
             color: white;
@@ -100,10 +110,26 @@
         }
 
         .section-first-footer{
-        border-top-left-radius: 45px;
-        border-bottom-left-radius: 45px;
+            border-top-left-radius: 6rem;
+            border-bottom-left-radius: 6rem;
             background-color: #207848;
-            height: 200px;
+            min-height: 20rem;
+            position: relative;
+            width: 100%;
+           
+            
+        }
+        .section-first-footer::after {
+
+            position: absolute;
+            content: '';
+            background-color:#207848;
+            height: 20rem;
+            width: 100%;
+            right :-50%;
+            top:0;
+           
+             
         }
 
 
@@ -173,10 +199,12 @@
 
         .border-area{
             border-style: solid;
-            border-width: 1px 1px;
-            border-radius: 20px;
+            border-width: 0.1rem 0.1rem;
+            border-radius: 2rem;
             border-color: #FFB600;
-            padding: 10px;
+            padding: 1rem;
+            align-items: center;
+           
         
         }
 
@@ -184,7 +212,7 @@
         
                 font-weight: bold;
                 color: #000;
-                font-size: 40px;
+                font-size: 3rem;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 text-align: left;
                 
@@ -192,51 +220,14 @@
         
         .border-area h3{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 20px; 
+                font-size: 2rem; 
                 text-align: left;
         }
-
-
-
-
-        /* our top team */
-
-        .first-row h1{
-            text-align: center;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
+        .icon img {
+            width: 100%;
+            height: 6rem;
         }
 
-        .first-row h3{
-
-            text-align: center;
-            color:  #FFB600;
-        }
-
-        .first-row h4{
-            text-align: center;
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        }
-        /* our-consultants  */
-
-        /* Consultants */
-        .row-footer h1{
-                font-size: 40px;
-                color: #207848;
-                font-weight: bold;
-            
-        }
-        .row-footer h3{
-            font-size: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            align-items:center ;
-        }
-        /* consultants */
-
-       
 
         
         ::selection {
@@ -374,11 +365,13 @@
 
             color:#FFB600;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 2rem;
             text-align: center;
 }
 
-.owl-carousel-content h4{
+
+
+.card-body h4{
 
             color: white;
             font-weight: bold;
@@ -386,17 +379,50 @@
             
 }
 
-.owl-carousel-content{
-            background-repeat: no-repeat;
+.card-body{
+            background-color: transparent;
+                      
 }
+.card{
+    height: 40rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    border-color: transparent;
+    box-shadow: #c9a7a74e;
+    
+}
+
+.card-title h4{
+    color: black;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title h5{
+    color: rgb(189, 178, 178);
+    font-size: 2rem ;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.card img{
+    min-width: 100%;
+    height: 50rem;
+    object-fit: contain;
+  
+}
+
+
 
 
 .header-content h1{
     color: #207848;
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
-    padding-left: 20rem;
+    text-align: left;
+    padding-left: 5rem;
 
 }
 .header-content-button h3{
@@ -458,19 +484,183 @@
 
 .consultants-content h1{
     color: white;
-    font-size: 35px;
-    padding-top: 10px;
+    font-size: 4rem;
+    padding-top: 2rem;
 
 }
 
 .consultants-content h3{
     color: #FFB600;
-    font-size: 20px; 
+    font-size: 2rem; 
 
     
     
 }
 .consultants-content h5{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.course{
+    padding: 5rem;
+    width: 100%;
+    background-color: #FFB600;
+    text-align: center;
+    height: 1100px;
+    border-bottom-left-radius: 16rem;
+    position: relative;
+}
+
+
+
+.course::before{
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 60%;
+    background-color:#207848;
+    left :0;
+    top:0;
+      
+}
+
+.vl {
+    border-left: 1px solid green;
+    height: 500px;
+  }
+
+.uni-content h1{
+    text-align: center;
+    color: #207848;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 2rem;
     
 }
+
+.partner-uni  {
+    align-items: center;
+    background:white;
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+
+}
+  
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    height: 15rem;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 10rem;
+    position: absolute;
+    width: 10rem;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(30rem * 10);
+  }
+
+  .slide {
+    height: 50rem;
+    width: 20rem;
+
+  }
+
+  .slide img{
+    align-items:center ;
+    margin: 5rem;
+    position:relative;
+
+  }
+
+  .owl-carousel img{
+    height: 60rem;
+    width: 100%;
+    
+  }
+
+
+
+.our-service{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    height: 80rem;
+    position: relative;
+}
+
+.our-service::before  {
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 60%;
+    background-color: #FFFFE4;
+    left :0;
+    top:0;   
+}
+
+.service-intro h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #207848;
+    padding-bottom: 1rem;
+    
+}
+.service-intro h3{
+    font-size: 16px;
+    color: #207848;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+.service-intro{
+    height: 60rem;
+    text-align: left;
+    padding-top: 10rem;
+    
+}
+.service-intro h4{
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
