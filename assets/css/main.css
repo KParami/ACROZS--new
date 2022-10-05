@@ -384,12 +384,11 @@
                       
 }
 .card{
-    height: 40rem;
+    height: 50rem;
     margin: 2rem;
     border-radius: 2rem;
     object-fit: cover;
-    border-color: transparent;
-    box-shadow: #c9a7a74e;
+    border-color: blue
     
 }
 
@@ -471,31 +470,22 @@
 .carousel-content h5{
     color: rgb(167, 174, 181);
     font-size: 20px;
-   
-
 }
 
-.item-course h1{
 
-    color: #000;
-    padding-top: 50px;
-
-}
 
 .consultants-content h1{
     color: white;
     font-size: 4rem;
     padding-top: 2rem;
-
 }
+
 
 .consultants-content h3{
     color: #FFB600;
     font-size: 2rem; 
-
-    
-    
 }
+
 .consultants-content h5{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
@@ -664,3 +654,54 @@
     font-size: 15px;
 }
 
+
+.section-first-footer{
+    border-top-left-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    background-color: #207848;
+    min-height: 20rem;
+    position: relative;
+    width: 100%;
+   
+    
+}
+.section-first-footer::after {
+
+    position: absolute;
+    content: '';
+    background-color:#207848;
+    height: 20rem;
+    width: 100%;
+    right :-50%;
+    top:0;
+   
+     
+}
+
+.service{
+    width: 100%;
+    
+    position: relative;
+    
+}
+
+.service::after{
+    position: absolute;
+    content: '';
+    background-color:transparent;
+    height: 65rem;
+    width: 100%;
+    right: -25%;
+    top: 0%;
+    padding-top: 20rem;
+    
+}
+
+.cardcontent{
+    height: 40rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    border-color: transparent;
+    box-shadow: #c9a7a74e;
+}
