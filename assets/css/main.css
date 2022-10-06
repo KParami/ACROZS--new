@@ -331,43 +331,6 @@
        
 
 
-.consultants{
-            
-            width: 100%;
-            background-color: #FFB600;
-            text-align: center;
-            height: 1100px;
-            border-bottom-left-radius: 16rem;
-            position: relative;
-                
-        }
-
-.consultants::before{
-            position: absolute;
-            content:'';
-            width: 100%;
-            height: 60%;
-            background-color:#207848;
-            left :0;
-            top:0;
-              
-}
-
-.content-consultants h1{
-
-            color:white;
-            font-weight: bold;
-            font-size: 30px;
-            text-align: center;
-}
-
-.content-consultants h3{
-
-            color:#FFB600;
-            font-weight: bold;
-            font-size: 2rem;
-            text-align: center;
-}
 
 
 
@@ -388,7 +351,7 @@
     margin: 2rem;
     border-radius: 2rem;
     object-fit: cover;
-    border-color: blue
+    border-color: transparent
     
 }
 
@@ -431,12 +394,7 @@
 
 }
 
-.drop-us-message h3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #e5e5e5;
-}
+
 /* most popular course */
 .courses{
     width: 100%;
@@ -460,36 +418,10 @@
     
 }
 
-.carousel-content h4 {
-    color: #000;
-    font-size: 30px;
-    font-weight: bold;
-
-}
-
-.carousel-content h5{
-    color: rgb(167, 174, 181);
-    font-size: 20px;
-}
 
 
 
-.consultants-content h1{
-    color: white;
-    font-size: 4rem;
-    padding-top: 2rem;
-}
 
-
-.consultants-content h3{
-    color: #FFB600;
-    font-size: 2rem; 
-}
-
-.consultants-content h5{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-}
 
 .course{
     padding: 5rem;
@@ -514,15 +446,12 @@
       
 }
 
-.vl {
-    border-left: 1px solid green;
-    height: 500px;
-  }
 
+/* Our partner universities */
 .uni-content h1{
     text-align: center;
     color: #207848;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     padding-left: 2rem;
     
@@ -530,16 +459,16 @@
 
 .partner-uni  {
     align-items: center;
-    background:white;
-    display: flex;
     height: 20rem;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
-
+    margin-bottom: 10rem;
+       
 }
-  
+
+
   @-webkit-keyframes scroll {
     0% {
       transform: translateX(0);
@@ -557,50 +486,67 @@
       transform: translateX(calc(-250px * 7));
     }
   }
+
   .slider {
-    background: white;
+    background:transparent;
     height: 15rem;
-    margin: auto;
     overflow: hidden;
     position: absolute;
     width: 100%;
   }
+
   .slider::before, .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 10rem;
-    position: absolute;
-    width: 10rem;
-    z-index: 2;
+   
   }
+
   .slider::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
   }
+
   .slider::before {
     left: 0;
     top: 0;
   }
-  .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+
+
+.slide-track {
+    -webkit-animation: scroll 50s linear infinite;
+            animation: scroll 50s linear infinite;
     display: flex;
-    width: calc(30rem * 10);
-  }
+    width: calc(80rem * 5);
+/*  */
+}
 
   .slide {
-    height: 50rem;
+    height: 10rem;
     width: 20rem;
-
+    margin-bottom: 6rem;
+    
   }
 
   .slide img{
-    align-items:center ;
-    margin: 5rem;
-    position:relative;
-
+  
+    width: 74%;
+    height: 16rem;
+    overflow: hidden;
+    object-fit: contain;
+    display: block;
+    margin-left: 3rem;
   }
+
+ 
+
+  .vl {
+    border-left: 1px solid green;
+    height: 15rem;
+    
+  }
+
+/* there service - Most popular course */
 
   .owl-carousel img{
     height: 60rem;
@@ -609,6 +555,7 @@
   }
 
 
+/* Our service */
 
 .our-service{
     width: 100%;
@@ -693,15 +640,167 @@
     width: 100%;
     right: -25%;
     top: 0%;
-    padding-top: 20rem;
+    
+  
     
 }
 
-.cardcontent{
-    height: 40rem;
-    margin: 2rem;
+.card-content{
+    height: 45rem;
     border-radius: 2rem;
+    border-color: blue;
     object-fit: cover;
-    border-color: transparent;
-    box-shadow: #c9a7a74e;
+    width: 27.5rem;
+    background-color: #207848;
+    padding-top: 10rem;
 }
+
+
+
+.card-con{
+    border-color: #FFB600;
+
+    padding: 4rem;
+    margin: 3.5rem;
+}
+.card-con h1  {
+    font-size: 20px;
+    color: white;
+   
+}
+.icon-grad{
+   
+    
+    position: relative;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 2rem;
+    
+}
+
+.card-con img{
+    height: 8rem;
+    
+    color: white;
+}
+
+
+/* Our-consultants */
+
+
+
+.consultants{
+            
+    width: 100%;
+    background-color: #FFB600;
+    text-align: center;
+    height: 1000px;
+    border-bottom-left-radius: 16rem;
+    position: relative;
+        
+}
+
+.consultants::before{
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 60%;
+    background-color:#207848;
+    left :0;
+    top:0;
+      
+}
+
+.intro-title h5{
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.intro-title h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.intro-title h3{
+    color:#FFB600;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.details{
+    padding: 10rem;
+    margin-top: 2rem;
+}
+ .content{
+    padding: 5rem;
+    object-fit: contain;
+ }
+
+ .card-img  img{
+  
+    object-fit: contain; 
+    display: block;
+    width: 100%;
+    height:100%;
+    overflow:hidden;
+    left:0px;
+    top:0px;
+    z-index:-1;
+    margin: auto;
+    position: relative;
+    border-radius: 1rem;
+
+    
+    
+ }
+
+ .ft-title h1{
+    font-size: 4rem;
+    color: #207848;
+    text-align: left;
+    font-weight: bold;
+ }
+
+.drop-message button{
+        background-color: #207848;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        
+        
+}
+.drop-message h3{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+.intro-footer{
+    padding: 3rem;
+    padding-left: 10rem;
+}
+
+.card-content{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.544); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    height: 4rem;
+    padding: 4rem;
+    border: none;
+}
+
+
+
