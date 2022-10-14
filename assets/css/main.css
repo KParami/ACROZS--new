@@ -17,11 +17,176 @@
             box-sizing: border-box
         }
 
+        body,
+p,
+a,
+li {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.5rem
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+dl,
+ol,
+ul {
+    padding: 0;
+    margin: 0 auto
+}
+
+li {
+    list-style: none
+}
+h1,h3,h4 {
+    font-family: 'Barlow', sans-serif;
+    
+
+}
+h2{
+    font-family: 'Sacramento', cursive;
+
+}
+a, li,p {
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+h5, p {
+    color: #e5e5e5;
+    font-family: 'Barlow', sans-serif;
+}
+
+.header{
+    font-family: 'Barlow', sans-serif;
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item a:hover{
+    color: #207848;
+}
+
+.navbar {
+    background-color: white;
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;
+}
+
+.navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+    
+    
+}
+
+.navbar-brand {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3rem;
+    color: #207848;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span{
+    display: block;
+    width: 31px;
+    height: 2px;
+    border: 1px;
+    background-color: #207848;
+}
+
+.navbar-toggler span + span {
+    margin-top: 4px;
+    width: 30.5px;
+    margin-right: 1px;
+} 
+
+.navbar-toggler span + span + span {
+    width: 30.5px;
+    margin-right: 1px;
+}
+.navbar-collapse{
+    background-color: #FBFFFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 2rem 1.2rem;
+    font-size: 1.8rem;
+    position: relative;
+    color: #207848;
+    font-weight: 500;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid #207848;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    border-bottom: 2px solid #207848;
+    
+}
+
+.navbar-nav button {
+    padding: 0rem ;
+    margin: 1px;
+}
+
+.navbar-nav .btn{
+    
+   
+    border-radius: 0;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+.navbar-nav .btn .nav-link:hover {
+   
+    border: none;
+    color: #fff;
+    background-color: #207848;
+  
+  
+}
+/* 
+.acrozs-logo {
+    display: inline-block;
+    width: 30%;
+  
+} */
+
+
+
+
+
         .py-large{
                 padding: 75px 0;
         }
 
+      
+        .container-fluid {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
 
+        
 
         .first-intro h2{
             font-size: 50px;
@@ -103,6 +268,8 @@
                 
         }
 
+        
+
         .btn h3{
             color: white;
             font-size: 20px;
@@ -143,14 +310,14 @@
 
             
         .title h1{
-            font-size: 64px;
+            font-size: 60px;
             position: relative;
             font-weight:bold ;
         }
 
         .title h1 span{
             position: relative;
-            font-size: 64px;
+            font-size: 60px;
             
         }
 
@@ -158,8 +325,8 @@
             content: '';
             position: absolute;
             left: 0;
-            bottom: -5px;
-            width: 75%;
+            bottom: -9px;
+            width:100%;
             height: 15px;
             background-image:url(/assets/images/underline.svg) ;
         }
@@ -190,8 +357,11 @@
             color: #FFB600;
             size: 8rem;
             
+        
         }
 
+        
+               
 
 
 
@@ -240,7 +410,82 @@
             width: 100%;
             height: auto;
             overflow: hidden;
+            position: relative;
+            top: 0;
+            left: 0;
         }
+        
+        .image1 {
+            
+            width: 80%;
+            position: relative;
+            padding-left: 20%;
+            z-index: 2;
+            
+          }
+
+        .image1::after {
+            position: absolute;
+            content: '';
+            height: 70rem;
+            width: 80%;
+            
+        
+          }
+           
+          
+          .bg-image{
+
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: contain;  
+            margin-top: 8rem;
+         
+          }
+
+
+          .section-first-footer{
+            border-top-left-radius: 6rem;
+            border-bottom-left-radius: 6rem;
+            background-color: #207848;
+            min-height: 20rem;
+            position: relative;
+            width: 100%;
+            margin-top: -20rem;
+           
+            
+        }
+        .section-first-footer::after {
+        
+            position: absolute;
+            content: '';
+            background-color:#207848;
+            height: 20rem;
+            width: 100%;
+            right :-50%;
+            top:0;
+           
+             
+        }
+
+            .image-content h1{
+                font-size: 4rem;
+                color: #e5e5e5;
+                font-weight: bold;
+            }
+
+         
+          .left-float-box {
+            float: left;
+            width: 60%;
+           
+            margin-top: -90rem;
+            width: 300px;
+            height: 100px;
+            border: 2px solid blue;
+            z-index: 10;
+          
+          }  
 
         .container {
             max-width: 85%;
@@ -263,29 +508,60 @@
                 font-size: 62.5%; } 
         }
 
+        /* media queries */
 
-
-        h1,h3,h4 {
-            font-family: 'Barlow', sans-serif;
-            
-
+       
+       
+        /* // X-Small devices (portrait phones, less than 576px)
+        // No media query for `xs` since this is the default in Bootstrap
+        
+        // Small devices (landscape phones, 576px and up) */
+       
+        @media screen and (min-width: 0px) {
+            .acrozs-logo{
+                width: 60%;
+            }
+            .bg-image{
+                width: 70%;
+            }
         }
-        h2{
-            font-family: 'Sacramento', cursive;
-
+       
+        @media screen and (min-width: 576px) {
+            .acrozs-logo{
+                width: 50%;
+            }
+            .bg-image{
+                width: 90%;
+            }
         }
-        a, li,p {
-            font-size: 20px;
-            font-family: 'Barlow', sans-serif;
+        
+        /* // Medium devices (tablets, 768px and up) */
+        @media screen and (min-width: 768px) { 
+            .acrozs-logo{
+                width: 40%;
+            }
+         }
+        
+        /* // Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) { 
+            .acrozs-logo{
+                width: 25%;
+            }
         }
-
-
-
-        h5, p {
-            color: #e5e5e5;
-            font-family: 'Barlow', sans-serif;
+        
+        /* // X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+            .acrozs-logo{
+                width: 30%;
+            }
         }
-
+        
+        /* // XX-Large devices (larger desktops, 1400px and up) */
+        @media (min-width: 1400px) { 
+            .acrozs-logo{
+                width: 20%;
+            }
+        }
 
         .footer{
             background-color: black;
@@ -323,60 +599,62 @@
             color: black;
 
         }
-        .feedback h1{
-            font-size: 30px;
-            color: #207848;
-        }
-
-       
-
-
-
-
-
-.card-body h4{
-
-            color: white;
-            font-weight: bold;
-            font-size: 30px;
-            
-}
+        
 
 .card-body{
             background-color: transparent;
                       
 }
 .card{
-    height: 50rem;
+    height: 40rem;
     margin: 2rem;
     border-radius: 2rem;
-    object-fit: cover;
-    border-color: transparent
-    
+    /* object-fit: contain; */
+    border-color: transparent;
+    box-shadow: 0px 0px 10px 2px gray;
+
 }
 
 .card-title h4{
     color: black;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
 }
 
-.card-title h5{
-    color: rgb(189, 178, 178);
-    font-size: 2rem ;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.card-title h3{
+        font-size: 1.5rem;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
 }
+
 
 
 .card img{
-    min-width: 100%;
-    height: 50rem;
-    object-fit: contain;
+    height: 40rem;
+    
   
 }
 
-
+.card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  
+    width: 300px; /* Box dimensions */
+    height: 400px;
+  
+    border-radius: 4px; /* Styling */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out; /* Animation */
+    /* background-color: rgba(0,0,0,.2); /* for debugging */
+  }
+  /* Shows an outer shadow */
+ 
+  
 
 
 .header-content h1{
@@ -400,6 +678,10 @@
     width: 100%;
     height: 700px;
     padding: 30px;
+}
+.popular-course{
+    padding-left: 15rem;
+    padding-right: 15rem;
 }
 
 .course-tittle-area h1{
@@ -491,7 +773,7 @@
     background:transparent;
     height: 15rem;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     width: 100%;
   }
 
@@ -552,6 +834,7 @@
     height: 60rem;
     width: 100%;
     
+    
   }
 
 
@@ -602,32 +885,9 @@
 }
 
 
-.section-first-footer{
-    border-top-left-radius: 6rem;
-    border-bottom-left-radius: 6rem;
-    background-color: #207848;
-    min-height: 20rem;
-    position: relative;
-    width: 100%;
-   
-    
-}
-.section-first-footer::after {
-
-    position: absolute;
-    content: '';
-    background-color:#207848;
-    height: 20rem;
-    width: 100%;
-    right :-50%;
-    top:0;
-   
-     
-}
 
 .service{
-    width: 100%;
-    
+    width: 100%; 
     position: relative;
     
 }
@@ -641,33 +901,50 @@
     right: -25%;
     top: 0%;
     
-  
     
 }
+
+/* .card-con{
+    padding-left:2rem;
+   
+} */
+
+.service-carousel .owl-stage {
+    left: -10px;
+    
+ }
+
 
 .card-content{
     height: 45rem;
     border-radius: 2rem;
-    border-color: blue;
-    object-fit: cover;
-    width: 27.5rem;
-    background-color: #207848;
+    border: solid 1px darkblue;
+    background-color:white;
     padding-top: 10rem;
 }
 
-
-
-.card-con{
-    border-color: #FFB600;
-
-    padding: 4rem;
-    margin: 3.5rem;
+.card-content:hover{
+    background-color: #207848;
 }
+
+.card-content:hover h1 {
+
+    cursor: pointer;
+    color: #f1f1f1;
+
+ }
+ .card-content:hover h3{
+    color: white;
+ }
+
+
+
 .card-con h1  {
     font-size: 20px;
     color: white;
    
 }
+
 .icon-grad{
    
     
@@ -676,14 +953,45 @@
     height: 10rem;
     width: 10rem;
     margin-left: 2rem;
+    background-color:lightblue;
+    color: #207848;
     
+
 }
 
-.card-con img{
-    height: 8rem;
-    
-    color: white;
+.icon-grad::after hover{
+    background-color: white;
 }
+
+.content-details h1{
+
+    padding-left: 3rem ;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    color: #207848;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+.content-details h3{
+
+    padding-left: 3rem ;
+    padding-right: 3rem;
+    color: #207848;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* .card-con img{
+    height: 8rem;
+
+    color: white;
+} */
 
 
 /* Our-consultants */
@@ -753,8 +1061,7 @@
     overflow:hidden;
     left:0px;
     top:0px;
-    z-index:-1;
-    margin: auto;
+    z-index:-3;
     position: relative;
     border-radius: 1rem;
 
@@ -790,17 +1097,338 @@
     padding-left: 10rem;
 }
 
-.card-content{
+.card-b{
+
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.544); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.534); /* Black background with 0.5 opacity */
     color: #f1f1f1;
     width: 100%;
     height: 4rem;
-    padding: 4rem;
+    padding-bottom: 10rem;
+    padding-left: 4rem;
+    border: transparent;
+   
+
+}
+
+.card-b h5{
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.card-b h1{
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+}
+
+.icon-card h4{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* Custom Navigation */
+/* 
+.customNavigation a {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: calc(45% - 25px);
+    cursor: pointer;
+  }
+  .customNavigation .prev {
+    left: -5rem;
+  }
+  .customNavigation .next {
+    right: -10rem;
+  }
+
+  */
+
+
+
+  /* Feedback */
+
+  .feedback h1{
+    font-size: 40px;
+    color: #207848;
+    font-weight: bold;
+}
+.feedback p{
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.student-feedback h1 span{
+    position: relative;
+    font-size: 40px;
+    
+}
+
+.student-feedback h1 span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 90%;
+    height: 16px;
+    background-image:url(/assets/images/underline.svg) ;
+}
+
+.st-icon img {
+    width: 80%;
+    height: 8rem;
+}
+.st-review h1{
+    color: #000;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+.st-review h3{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(92, 87, 87, 0.692);
+}
+
+.st-review{
+    border: rgba(199, 198, 198, 0.979) Solid 1px;
+    border-radius: 25rem;
+}
+
+.st-image img{
+    height:80rem;
+    width:100%;
+}
+
+
+/* Form */
+
+input[type=text], select, textarea {
+
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #000;
+  }
+  
+  input[type=submit] {
+    background-color: #207848;
+    color: white;
+    padding: 25px 60px;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container-b {
+   
+    background-color:transparent;
+    margin-top: 4rem;
+    padding : 30px;
+  }
+  .container-b h1{
+
+    font-size: 4rem;
+  }
+
+  .bg-img-contact{
+    width:100%;
+    height:60rem;
+    padding: 10px;
+    margin:  auto;
+    /* box-shadow: 0 0 10px 2px gray; */
+    /* background-image: url(/assets/images/bg-contact-1_optimized.jpg); */
+
+}
+
+
+.intro-ft h3{
+    color: #207848;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.intro-ft h1{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.intro-ft h4{
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.intro-ft fa-solid fa-blender-phone{
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.contact-info{
+    padding-left: 20rem;
+   
+}
+/* 
+.social-list{
+    margin: auto;
+    
+} */
+
+
+.title-footer h5{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.content li{
+    font-size: 1.5rem;
+}
+
+
+.get-in-touch-with-us{
+    padding-left: 10rem;
 }
 
 
 
+/* footer */
+
+.footer-top{
+    padding:7.5rem 0;
+    min-height: 40rem;
+}
+
+/* .logo{
+    height: 3rem;
+    width:70%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+
+
+.logo-content p{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+} */
+
+.footer-logo-panel img {
+    width: 22rem;
+
+}
+
+/* .title-footer h5{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+} */
+
+.copywrite-area{
+    border-top: 0.5px solid #FFB600;
+}
+
+.footer-widget-2 .title-footer{
+    position: relative;
+}
+.footer-widget-2 .title-footer h5{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+}
+
+.footer-widget-2 .title-footer h5::after{
+    content: '';
+    width: 50%;
+    height: 10px;
+    background-color: #FFB600;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+}
+
+.footer-widget-ul li{
+    list-style: none;
+    padding-left: 3rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.footer-widget-ul li:last-child{
+    margin-bottom: 0;
+}
+
+.footer-widget-ul li::before{ 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    content: "\f101";
+    width: 2.5rem;
+    height: 3.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    color: #FFB600;
+}
+
+.footer-widget-ul li a{
+    color: #fff;
+}
+
+.copywrite-con p, .copywrite-con a{
+    font-size: 1.5rem;
+    color: rgb(207, 207, 207);
+    
+}
+
+ 
+
+ .social-list-ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0;
+ } 
+
+ .social-list-ul li {
+    margin: 0 1rem;
+ }
+
+ .social-list-ul li a i{
+    font-size: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00172D;
+    font-size: 2.8rem;
+    color: rgb(221, 221, 221);
+ }
